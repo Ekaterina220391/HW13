@@ -38,15 +38,22 @@ public class Main {
             this.name = name;
             this.surname = surname;
         }
+        public String getName() {
+            return this.name;
+        }
+
+    public String getSurname() {
+        return this.surname;
+    }
     }
 
     public static void main(String[] args) {
         Author author = new Author("Joan", "Rouling");
         Author author1 = new Author("Lev", "Tolstoy");
-        System.out.println("Имя  " + author.name);
-        System.out.println("Фамилия " + author.surname);
-        System.out.println("Имя  " + author1.name);
-        System.out.println("Фамилия " + author1.surname);
+        System.out.println("Имя  " + author.getName());
+        System.out.println("Фамилия " + author.getSurname());
+        System.out.println("Имя  " + author1.getName());
+        System.out.println("Фамилия " + author1.getSurname());
         Book book = new Book("Harry Potter", "Joan Rouling", 1997);
         System.out.println("Название книги = " + book.getTitle());
         System.out.println("Автор = " + book.getAuthor());
