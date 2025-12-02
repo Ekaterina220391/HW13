@@ -38,13 +38,14 @@ public class Main {
             this.name = name;
             this.surname = surname;
         }
+
         public String getName() {
             return this.name;
         }
 
-    public String getSurname() {
-        return this.surname;
-    }
+        public String getSurname() {
+            return this.surname;
+        }
     }
 
     public static void main(String[] args) {
@@ -67,7 +68,6 @@ public class Main {
         book1.setDate(1875);
         System.out.println("Измененная дата = " + book1.getDate());
     }
-
 
 }
 
