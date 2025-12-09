@@ -1,9 +1,8 @@
 public class App {
-    public class Main {
         public static void main(String[] args) {
             Author author = new Author("Joan", "Rouling");
             Author author1 = new Author("Lev", "Tolstoy");
-            Book book = new Book("Harry Potter", Author, 1997);
+            Book book = new Book("Harry Potter", author, 1997);
             System.out.println("Название книги = " + book.getTitle());
             System.out.println("Автор = " + book.getAuthor());
             System.out.println("Дата написания произведения =" + book.getDate());
@@ -18,5 +17,5 @@ public class App {
         }
 
     }
-}
+
 
