@@ -1,7 +1,7 @@
 public class Book {
-        Author author;
-        String title;
-        int date;
+        private Author author;
+        private String title;
+        private int date;
 
         public Book(String title, Author author, int date) {
             this.title = title;
